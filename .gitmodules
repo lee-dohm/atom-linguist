@@ -1,0 +1,3 @@
+[submodule "github-linguist"]
+	path = github-linguist
+	url = https://github.com/github/linguist.git
