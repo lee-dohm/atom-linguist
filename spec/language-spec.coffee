@@ -15,3 +15,6 @@ describe 'Language', ->
 
   it 'has a list of filenames', ->
     expect(language.filenames).toEqual ['.jshintrc', 'composer.lock']
+
+  it 'has a scope name', ->
+    expect(language.scope).toEqual 'source.json'

@@ -39,6 +39,7 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-coffeelint')
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-copy')
+  grunt.loadNpmTasks('grunt-notify')
 
   grunt.registerTask 'clean', -> require('rimraf').sync('lib')
   grunt.registerTask('lint', ['coffeelint:lib', 'coffeelint:spec'])
