@@ -23,7 +23,8 @@
   "homepage": "https://github.com/lee-dohm/atom-linguist",
   "dependencies": {
     "coffee-script": "^1.8.0",
-    "js-yaml": "^3.2.5"
+    "js-yaml": "^3.2.5",
+    "underscore-plus": "^1.6.6"
   },
   "devDependencies": {
     "grunt-contrib-coffee": "~0.7.0",
