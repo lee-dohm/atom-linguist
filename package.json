@@ -1,0 +1,37 @@
+{
+  "name": "atom-linguist",
+  "version": "0.0.0",
+  "description": "Language classifier for Atom",
+  "main": "main.coffee",
+  "scripts": {
+    "test": "grunt spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lee-dohm/atom-linguist"
+  },
+  "keywords": [
+    "atom",
+    "language",
+    "classifier"
+  ],
+  "author": "Lee Dohm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lee-dohm/atom-linguist/issues"
+  },
+  "homepage": "https://github.com/lee-dohm/atom-linguist",
+  "dependencies": {
+    "coffee-script": "^1.8.0",
+    "js-yaml": "^3.2.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-copy": "~0.7.0",
+    "grunt-cli": "~0.1.8",
+    "grunt": "~0.4.1",
+    "grunt-shell": "~0.2.2",
+    "grunt-coffeelint": "0.0.6",
+    "jasmine-focused": "1.x"
+  }
+}
