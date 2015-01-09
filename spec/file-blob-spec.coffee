@@ -16,3 +16,13 @@ describe 'FileBlob', ->
 
   it 'gets the contents of the file', ->
     expect(fileBlob.getData()).toEqual getFixtureText('test.coffee')
+
+  describe 'extensions', ->
+    beforeEach ->
+      fileBlob = new FileBlob('foo/bar/baz.html.erb')
+
+    it 'gets all the extension combinations of the file', ->
+      expect(fileBlob.getExtensions()).toEqual ['.html.erb', '.erb']
+
+    it 'gets the last extension', ->
+      expect(fileBlob.getExtension()).toEqual '.erb'
