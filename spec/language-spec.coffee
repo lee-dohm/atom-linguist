@@ -18,3 +18,13 @@ describe 'Language', ->
 
   it 'has a scope name', ->
     expect(language.scope).toEqual 'source.json'
+
+  describe '.all', ->
+    it 'retrieves all languages', ->
+      languages = Language.all(getFixturePath('mini-languages.yml'))
+      keys = Object.keys(languages)
+
+      expect(keys.length).toBe 3
+      expect(keys).toContain 'C'
+      expect(keys).toContain 'C#'
+      expect(keys).toContain 'C++'

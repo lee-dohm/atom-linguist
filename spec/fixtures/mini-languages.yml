@@ -1,0 +1,47 @@
+C:
+  type: programming
+  color: "#555"
+  extensions:
+  - .c
+  - .C
+  - .H
+  - .cats
+  - .h
+  - .idc
+  - .w
+  ace_mode: c_cpp
+
+C#:
+  type: programming
+  ace_mode: csharp
+  tm_scope: source.cs
+  search_term: csharp
+  color: "#178600"
+  aliases:
+  - csharp
+  extensions:
+  - .cs
+  - .cshtml
+  - .csx
+
+C++:
+  type: programming
+  ace_mode: c_cpp
+  search_term: cpp
+  color: "#f34b7d"
+  aliases:
+  - cpp
+  extensions:
+  - .cpp
+  - .c++
+  - .cc
+  - .cxx
+  - .h
+  - .h++
+  - .hh
+  - .hpp
+  - .hxx
+  - .inl
+  - .ipp
+  - .tcc
+  - .tpp
