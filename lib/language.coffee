@@ -18,9 +18,19 @@ class Language
 
     @languages
 
+  # Public: Finds the list of language candidates from the supplied extension.
+  #
+  # * `extension` {String} extension to classify.
+  #
+  # Returns an {Array} of {String} language names.
   @findByExtension: (extension) ->
     (name for name, lang of @all() when lang.extensions? and extension in lang.extensions)
 
+  # Public: Finds the list of language candidates from the supplied full file name.
+  #
+  # * `fullName` {String} name of the file to classify.
+  #
+  # Returns an {Array} of {String} language names.
   @findByFullName: (fullName) ->
     (name for name, lang of @all() when lang.filenames? and fullName in lang.filenames)
 
