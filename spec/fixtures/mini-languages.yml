@@ -45,3 +45,16 @@ C++:
   - .ipp
   - .tcc
   - .tpp
+
+JSON:
+  type: data
+  tm_scope: source.json
+  group: JavaScript
+  ace_mode: json
+  searchable: false
+  extensions:
+  - .json
+  - .lock
+  filenames:
+  - .jshintrc
+  - composer.lock

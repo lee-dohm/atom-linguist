@@ -18,6 +18,12 @@ class Language
 
     @languages
 
+  @findByExtension: (extension) ->
+    (name for name, lang of @all() when lang.extensions? and extension in lang.extensions)
+
+  @findByFullName: (fullName) ->
+    (name for name, lang of @all() when lang.filenames? and fullName in lang.filenames)
+
   # Public: Creates a language from the `record` stored in `data/languages.yml`.
   #
   # * `record` {Object} record from storage.
