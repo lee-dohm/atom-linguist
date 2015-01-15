@@ -1,7 +1,7 @@
 fs = require 'fs'
 path = require 'path'
 
-yaml = require 'js-yaml'
+Yaml = require 'js-yaml'
 
 # Public: Represents a known language.
 class Language
@@ -12,7 +12,7 @@ class Language
   # Returns an {Object} mapping language name to language record.
   @all: (recordsPath = path.join(__dirname, '../data/languages.yml')) ->
     unless @languages
-      yaml = yaml.safeLoad(fs.readFileSync(recordsPath))
+      yaml = Yaml.safeLoad(fs.readFileSync(recordsPath))
       @languages = {}
       @languages[name] = new Language(lang) for name, lang of yaml
 
