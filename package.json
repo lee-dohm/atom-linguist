@@ -3,8 +3,12 @@
   "version": "0.0.0",
   "description": "Language classifier for Atom",
   "main": "main.coffee",
+  "bin": {
+    "atom-linguist": "bin/atom-linguist"
+  },
   "scripts": {
-    "test": "grunt spec"
+    "test": "grunt spec",
+    "prepublish": "grunt lint spec copy"
   },
   "repository": {
     "type": "git",
