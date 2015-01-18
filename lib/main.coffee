@@ -2,6 +2,7 @@ _ = require 'underscore-plus'
 
 FileBlob = require './file-blob'
 FileNameStrategy = require './file-name-strategy'
+ShebangStrategy = require './shebang-strategy'
 
 module.exports =
   detect: (filePath) ->
@@ -23,4 +24,4 @@ module.exports =
   #
   # Returns an {Array} of strategies.
   strategies: ->
-    [FileNameStrategy]
+    [FileNameStrategy, ShebangStrategy]

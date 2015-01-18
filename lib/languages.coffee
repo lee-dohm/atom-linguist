@@ -27,3 +27,11 @@ module.exports =
   # Returns an {Array} of {String} language names.
   findByFileName: (fileName) ->
     (name for name, lang of @all() when lang.filenames? and fileName in lang.filenames)
+
+  # Public: Finds the list of language candidates from the supplied interpreter name.
+  #
+  # * `interpreter` {String} name of the interpreter.
+  #
+  # Returns an {Array} of {String} language names.
+  findByInterpreter: (interpreter) ->
+    (name for name, lang of @all() when lang.interpreters? and interpreter in lang.interpreters)

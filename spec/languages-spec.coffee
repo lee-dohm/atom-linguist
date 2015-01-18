@@ -12,7 +12,7 @@ describe 'Languages', ->
     it 'retrieves all languages', ->
       keys = Object.keys(languages)
 
-      expect(keys.length).toBe 5
+      expect(keys.length).toBe 6
       expect(keys).toContain 'C'
       expect(keys).toContain 'C#'
       expect(keys).toContain 'C++'
@@ -29,3 +29,7 @@ describe 'Languages', ->
   describe '.findByFullName', ->
     it 'gets a list of candidates', ->
       expect(Languages.findByFileName('composer.lock')).toEqual ['JSON']
+
+  describe '.findByInterpreter', ->
+    it 'gets a list of candidates', ->
+      expect(Languages.findByInterpreter('bash')).toEqual ['Shell']

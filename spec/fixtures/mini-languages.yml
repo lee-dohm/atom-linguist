@@ -77,3 +77,28 @@ JSON:
   filenames:
   - .jshintrc
   - composer.lock
+
+Shell:
+  type: programming
+  search_term: bash
+  color: "#89e051"
+  aliases:
+  - sh
+  - bash
+  - zsh
+  extensions:
+  - .sh
+  - .bash
+  - .bats
+  - .cgi
+  - .command
+  - .fcgi
+  - .ksh
+  - .tmux
+  - .zsh
+  interpreters:
+  - bash
+  - rc
+  - sh
+  - zsh
+  ace_mode: sh
