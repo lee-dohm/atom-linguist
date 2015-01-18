@@ -5,6 +5,11 @@ FileNameStrategy = require './file-name-strategy'
 ShebangStrategy = require './shebang-strategy'
 
 module.exports =
+  # Public: Detects the language of the file at `filePath`.
+  #
+  # * `filePath` {String} path to the file.
+  #
+  # Returns the name {String} of the detected language.
   detect: (filePath) ->
     strategies = @strategies()
     blob = new FileBlob(filePath)
