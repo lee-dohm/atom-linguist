@@ -1,2 +1,5 @@
+FileNameStrategy = require './file-name-strategy'
+
 module.exports =
-  detect: (blob) ->
+  strategies: ->
+    [FileNameStrategy]
