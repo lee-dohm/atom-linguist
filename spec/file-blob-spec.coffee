@@ -1,3 +1,5 @@
+path = require 'path'
+
 FileBlob = require '../lib/file-blob'
 
 {getFixturePath, getFixtureText} = require './spec-helper'
@@ -16,6 +18,11 @@ describe 'FileBlob', ->
 
   it 'gets the contents of the file', ->
     expect(fileBlob.getData()).toEqual getFixtureText('test.coffee')
+
+  it 'gets the first line of a file', ->
+    fileBlob = new FileBlob(path.join(__dirname, '../bin/atom-linguist'))
+
+    expect(fileBlob.getFirstLine()).toEqual '#!/usr/bin/env node'
 
   describe 'extensions', ->
     beforeEach ->

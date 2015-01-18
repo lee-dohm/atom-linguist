@@ -18,6 +18,9 @@ class FileBlob
   getData: ->
     fs.readFileSync(@fileName).toString()
 
+  getFirstLine: ->
+    @getData().split('\n')[0]
+
   # Public: Returns the last extension of the file.
   getExtension: ->
     _.last(@getExtensions())
