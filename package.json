@@ -2,7 +2,7 @@
   "name": "atom-linguist",
   "version": "0.0.0",
   "description": "Language classifier for Atom",
-  "main": "main.coffee",
+  "main": "lib/main.coffee",
   "bin": {
     "atom-linguist": "bin/atom-linguist"
   },
