@@ -7,11 +7,9 @@ This package is intended to replace the built-in Atom language classification by
 ## Usage
 
 ```coffee
-fs = require 'fs'
-
 Linguist = require 'atom-linguist'
 
-Linguist.detect(fs.readFileSync('foo.coffee')).name     # => 'CoffeeScript'
+Linguist.detect('foo.coffee')     # => 'CoffeeScript'
 ```
 
 ## Copyright
