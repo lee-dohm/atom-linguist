@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 require('coffee-script/register');
-var Language = require('../lib/language');
+var main = require('../lib/main');
 
-console.log(Language.detect(process.argv[1]));
+var fileName = process.argv[2];
+console.log(fileName + " is " + main.detect(fileName));

@@ -12,10 +12,11 @@ describe 'Languages', ->
     it 'retrieves all languages', ->
       keys = Object.keys(languages)
 
-      expect(keys.length).toBe 4
+      expect(keys.length).toBe 5
       expect(keys).toContain 'C'
       expect(keys).toContain 'C#'
       expect(keys).toContain 'C++'
+      expect(keys).toContain 'CoffeeScript'
       expect(keys).toContain 'JSON'
 
   describe '.findByExtension', ->

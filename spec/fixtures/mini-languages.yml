@@ -46,6 +46,25 @@ C++:
   - .tcc
   - .tpp
 
+CoffeeScript:
+  type: programming
+  tm_scope: source.coffee
+  ace_mode: coffee
+  color: "#244776"
+  aliases:
+  - coffee
+  - coffee-script
+  extensions:
+  - .coffee
+  - ._coffee
+  - .cjsx
+  - .cson
+  - .iced
+  filenames:
+  - Cakefile
+  interpreters:
+  - coffee
+
 JSON:
   type: data
   tm_scope: source.json
