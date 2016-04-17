@@ -10,7 +10,7 @@ module.exports =
   #
   # Returns an {Object} mapping language name to language record.
   all: (recordsPath = path.join(__dirname, '../data/languages.yml')) ->
-    @languages ?= Yaml.safeLoad(fs.readFileSync(recordsPath))
+    @languages ?= Yaml.safeLoad(fs.readFileSync(recordsPath), {json: true})
 
   # Public: Finds the list of language candidates from the supplied extension.
   #
